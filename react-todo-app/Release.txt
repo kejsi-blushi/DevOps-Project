@@ -1,2 +1,2 @@
-App_version : 1.0.7
-Latest_commit: 0
+App_version : 1.0.8
+Latest_commit: kkkk111

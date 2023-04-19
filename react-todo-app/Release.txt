@@ -1,2 +1,2 @@
-App_version : 1.0.4
-Latest_commit: de1ed99
+App_version : 1.0.2
+Latest_commit: 28ebaea

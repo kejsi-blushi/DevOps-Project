@@ -1,2 +1,2 @@
-App_version : 1.0.5
-Latest_commit: 2302a8182389cfbea91337ef9d5d
+App_version : 1.0.6
+Latest_commit: 0

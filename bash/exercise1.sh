@@ -19,10 +19,10 @@ if [ "$main_commit" != "$last_commit" ]; then
   commit_hash=$(git log --pretty=format:'%h' -n 1)
 
   # Build the Docker image with the latest changes and tag it with the commit hash
-  docker build -t "$dockerhub_username/$docker_image:$commit_hash" .
+  docker build -t $dockerhub_username/$docker_image:$commit_hash react-todo-app/
 
   # Push the Docker image to DockerHub
-  docker push "$dockerhub_username/$docker_image:$commit_hash"
+  docker push $dockerhub_username/$docker_image:$commit_hash
 
   # Deploy the new version of the Helm chart with the new Docker image
   helm upgrade  react-helm ./my_helm_chart  --set image.tag="$commit_hash"
